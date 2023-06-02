@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<style>
+  .carousel-item{
+    min-height: 500px;
+    background-size: cover;
+}  
+
+.carusel{
+    position: relative;
+    width: 100%;
+    
+  }
+
+  .form-wrapper {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+  }
+
+
+
+.h1{
+  padding-top: 30px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    /* bottom: 0px; */
+    color: white;
+    /* clear: both;
+    position: fixed; */
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.items label{
+  text-align: left;
+  width: 50%;
+  display: block;
+  margin-bottom: 10px;
+
+}
+
+.custom-width{
+  max-width: 400px;
+  
+}
+
+.card-group{
+  margin-left: 20px;
+  margin-right: 20px;
+  border: none;
+  
+}
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">Royal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="nuevo.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="youtube.html">Politica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://wa.me/543400417133">Contactos</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <a id="wa" href="https://wa.me/543400417133" > <img src="whatsapp-icon.svg" alt=""></a>
+        </span>
+        
+      </div>
+    </div>
+  </nav>
+
+
+
+</div> 
+        <div id="carouselExampleCaptions" class="carousel slide card">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="background-image: url(interior.png);">
+                
+                <div class="carousel-caption d-none d-md-block">
+                  
+                </div>
+              </div>
+              <div class="carousel-item"  style="background-image: url(niños.jpg);">
+                
+                <div class="carousel-caption d-none d-md-block">
+                  
+                </div>
+              </div>
+              <div class="carousel-item"  style="background-image: url(sillones.jpg);">
+                
+                <div class="carousel-caption d-none d-md-block">
+                
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+  <div class="form-wrapper">
+    <div class="col-auto bg-light p-4 custom-width">
+      <form>
+      <div class="items">
+        <div class="row mb-6">
+        <h3>Encontra tu lugar</h3>
+        <br>
+        <label for="inputprovincia" class="col-sm-2 col-form-label "></label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputEmail3" placeholder="Provincia">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputPassword3" placeholder="Ciudad">
+        </div>
+      </div>
+    </div>
+      <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Opción:</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            <label class="form-check-label" for="gridRadios1">
+              Alquilar
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+              Vender
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+              Comprar
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+</div>
+
+         
+</div>
+<br>
+<br>
+<div class="h1">Acerca de nosotros</div>
+<br>
+<div class="card-group">
+    <div class="card border-0">
+      <img src="person-lines-fill.svg" class="card-img-top" alt="" width="50px" height="50px" >
+      <div class="card-body">
+        <h5 class="card-title">Atencion personalizada</h5>
+        <p class="card-text">Has tu consulta en cualquier momento un asistente te respondera a la brevedad.</p>
+        <p class="card-text"><small class="text-body-secondary"></small></p>
+      </div>
+    </div>
+    <div class="card border-0">
+      <img src="gear.svg" class="card-img-top" alt="" width="50px" height="50px" >
+      <div class="card-body">
+        <h5 class="card-title">Adaptabilidad</h5>
+        <p class="card-text">Nos adapatamos a cualquier presupuesto</p>
+        <p class="card-text"><small class="text-body-secondary"></small></p>
+      </div>
+    </div>
+    <div class="card border-0">
+      <img src="folder-check.svg" class="card-img-top" alt="" width="50px" height="50px" >
+      <div class="card-body">
+        <h5 class="card-title">Confia tu propiedad</h5>
+        <p class="card-text">Contamos con los mejores profesionales a la hora de Comprar o vender tu propiedad </p>
+        <p class="card-text"><small class="text-body-secondary"></small></p>
+      </div>
+    </div>
+  </div>        
+<br>
+<br>
+<div class="card border-0">
+<div class="row row-cols-1 row-cols-md-2 g-4 ">
+    <div class="col">
+      <div class="card">
+        <img src="casa1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Casa U$S 58.000</h5>
+          <p class="card-text">Situada en Av.Terrance en la localidad de Ramallo.
+            <br>
+            Cuenta con:
+            <br>
+            3 dormitorios
+            <br>
+            2 baños
+            <br>
+            Patio trasero y patio interno
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="casa2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dept. alquiler 60.000$</h5>
+          <p class="card-text">Amplio departamento situado en calle Sivori 1268 Barrio Pringles
+            <br>
+            Cuenta con:
+            <br>
+            2 Ambientes
+            <br>
+            1 habitacion
+            <br>
+            1 Baño con bañera
+            <br>
+            Balcon amplio</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="casa3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Casa en Venta US$ 340.000</h5>
+          <p class="card-text">cuenta con:
+            <br>
+            3 habitaciones
+            <br>
+            3 baños
+            <br>
+            Amplio comedor
+            <br>
+            Patio trasero
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="casa4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Terreno en venta U$S 42.000</h5>
+        
+          <p class="card-text">Amplio terreno situado en la localidad de Villa Ramallo
+            <br>
+            1400m2 Con todos los servicios
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <br>
+  <br>
+  <Footer class="foot">
+    <div class="titulo Footer">Redes sociales</div>
+    <a href="facebook.com"> <img src="facebook (1).svg" alt=""></a> <a href=""> <img src="youtube-icon.svg" alt=""></a>
+    <p>Pagina realizada por Alan Robaina</p>
+    
+ <img src="copyright.svg" alt=""> Copyright  2023
+</Footer>
+
+<script>
+  function verificarEdad() {
+    var age = prompt("Cual es tu edad?");
+    if (age < 18) {
+      alert("Eres menor de edad recuerda que entra bajo su responsabilidad. Dar click en 'OK' para aceptar");
+    }
+  }
+  verificarEdad();
+
+  
+
+  document.getElementById("wa").addEventListener("click",
+  function(event){
+    var confirmacion = confirm("va a salir del Sitio web, ¿Esta seguro?");
+    if (confirmacion === false){
+      event.preventdefault();
+    }
+  });
+
+  // function redireccionar(){
+  //   window.location.href = "comprar.html";
+  // }
+</script>
+
+    
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

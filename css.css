@@ -1,0 +1,20 @@
+
+
+.h1{
+  padding-top: 30px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    /* bottom: 0px; */
+    color: white;
+    /* clear: both;
+    position: fixed; */
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
